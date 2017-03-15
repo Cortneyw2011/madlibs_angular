@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app = 'madlibs'>
+  <head>
+    <title>MADLIBS</title>
+  </head>
+  <body >
+    <a href="#/userinput">Click to see you Madlib!</a>
+
+
+      <div class="form" ng-controller = 'inputCtrl'>
+        <div ng-repeat = 'object in userObject'>
+        <input type="text" ng-model = 'object.input'>
+      </div>
+      {{userObject}}
+      </div>
+  <ng-view></ng-view>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script>
+    <script src="scripts/module/module.js"></script>
+    <script src="scripts/controllers/inputCtrl.js"></script>
+  </body>
+</html>
