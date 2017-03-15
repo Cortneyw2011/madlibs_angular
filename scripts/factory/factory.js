@@ -1,6 +1,6 @@
 var app = angular.module('madlibs');
 
-App.factory('madlibFactory', function(userObject) {
+app.factory('madlibFactory', function() {
 
   var data = {};
   return {
