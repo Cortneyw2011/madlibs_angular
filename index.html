@@ -4,15 +4,11 @@
     <title>MADLIBS</title>
   </head>
   <body >
-    <a href="#/userinput">Click to see you Madlib!</a>
+    <a href="#/userinput">Click to begin!</a>
+    <a href="#/displayLibs">Click to see you Madlib!</a>
 
 
-      <div class="form" ng-controller = 'inputCtrl'>
-        <div ng-repeat = 'object in userObject'>
-        <input type="text" ng-model = 'object.input'>
-      </div>
-      {{userObject}}
-      </div>
+
   <ng-view></ng-view>
 
 

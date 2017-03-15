@@ -1,7 +1,9 @@
 var app = angular.module('madlibs');
 
-app.controller ('inputCtrl', function($scope){
+app.controller ('inputCtrl', function($scope, madlibFactory){
 
- $scope.userObject = [{input: 'person'}, {input: 'adjective'}, {input:'he or she'}, {input: 'noun'}, {input: 'adjective2'}, {input:'place'}, {input: 'color'}, {input:'verb-ing'}, {input: 'preposition'}];
+$scope.getInfo = function (person, adjective, pronoun, noun2, adjective2, place, color, verb, preposition){
+  madlibFactory.setData (person, adjective, pronoun, noun2, adjective2, place, color, verb, preposition);
+}
 
 });

@@ -1,20 +1,5 @@
-<div class="form">
-  person: <input type="text" ng-model = "person">
-  <br>
-  Adjective <input type="text" ng-model = "adjective">
-  <br>
-  pronoun () <input type="text" ng-model = "pronoun">
-  <br>
-  Noun: <input type="text" ng-model = "noun2">
-  <br>
-  Adjective <input type="text" ng-model = "adjective2">
-  <br>
-  Place: <input type="text" ng-model = "place">
-  <br>
-  Color <input type="text" ng-model = "color">
-  <br>
-  Verb (-ing): <input type="text" ng-model = "verb">
-  <br>
-  Preposition <input type="text" ng-model = "preposition">
-
+<div class="form" ng-controller = 'inputCtrl'>
+  <div ng-repeat = 'object in userObject'>
+  <input type="text" ng-model = 'object.input'>
+</div>
 </div>

@@ -9,7 +9,11 @@ $routeProvider
 //input page
 .when('/userinput',{
   controller: 'inputCtrl',
-  templateUrl:'views/displayLibs.html'
+  templateUrl:'views/userinput.html'
+})
+  .when('/displayLibs',{
+    controller: 'displayCtrl',
+    templateUrl:'views/displayLibs.html'
 });
 
 $locationProvider.hashPrefix('');
